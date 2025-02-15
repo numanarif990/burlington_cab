@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Burlington City Cab - Your trusted choice for fast, reliable, and safe taxi services in Burlington. Whether you need a quick ride across town or transportation to the airport, we’ve got you covered! Book online with ease or call us anytime for prompt, hassle-free service. Experience comfort, safety, and professionalism with every ride.">
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="web_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>🚖 Burlington City Cab | Reliable Taxi Service in Burlington 🚖</title>
+  <meta name="keywords" content="Burlington City Cab, Burlington taxi service, quick taxi Burlington, reliable transportation Burlington, cab service Burlington, book taxi Burlington, airport taxi Burlington, city cab Burlington, Burlington cabs, online taxi booking Burlington, safe taxi Burlington, Burlington city transportation, Burlington taxi booking, local cab service Burlington, Burlington taxi app">
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WFJ4ZZHW');</script>
+  <!-- End Google Tag Manager -->
+
+
+
+  <meta name="author" content="Burlington City Cab">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    #loader-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 5vw;
+      height: 5vw;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      .loader {
+        width: 7vw;
+        height: 7vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .loader {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFJ4ZZHW"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="loader-container">
+  <div class="loader"></div>
+</div>
+
+<script src="flutter_bootstrap.js" async></script>
+<script>
+  window.onload = function() {
+    var loadingIndicator = document.getElementById('loader-container');
+    if (loadingIndicator) {
+      loadingIndicator.remove(); // Remove the loading indicator when the page finishes loading
+    }
+  };
+</script>
+
+</body>
+</html>
