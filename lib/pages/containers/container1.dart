@@ -10,6 +10,8 @@ import 'package:web_app/utils/constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+import 'apps_container/download_badge.dart';
+
 
 class Container1 extends StatefulWidget {
   const Container1({super.key});
@@ -120,6 +122,7 @@ class _Container1State extends State<Container1> {
                 ],
               ),
               AnimatedText2(fontsize: screenWidth / 60),
+
             ],
           ),
         ),
@@ -150,6 +153,26 @@ class _Container1State extends State<Container1> {
             ],
           ),
         ),
+       Positioned(
+           bottom: 25, // Add some padding to make it responsive
+           left: 20,
+           child:  Row(
+         children: [
+           DownloadBadge(
+             imageUrl: 'assets/images/apple-logo.png',
+             text: 'App Store',
+             height: 70,
+             url: 'https://apps.apple.com/us/app/maple-rides/id6743804217',
+           ),
+           SizedBox(width: 10,),
+           DownloadBadge(
+             imageUrl: 'assets/images/play.png',
+             text: 'Google Play',
+             height: 70,
+             url: 'https://play.google.com/store/apps/details?id=com.maplerides.passengerapp',
+           ),
+         ],
+       ))
       ],
     );
   }
@@ -212,6 +235,26 @@ class _Container1State extends State<Container1> {
             ],
           ),
         ),
+        Positioned(
+            bottom: 25, // Add some padding to make it responsive
+            left: 10,
+            child:  Row(
+              children: [
+                DownloadBadge(
+                  imageUrl: 'assets/images/apple-logo.png',
+                  text: 'App Store',
+                  height: 50,
+                  url: 'https://apps.apple.com/us/app/maple-rides/id6743804217',
+                ),
+                SizedBox(width: 10,),
+                DownloadBadge(
+                  imageUrl: 'assets/images/play.png',
+                  text: 'Google Play',
+                  height: 50,
+                  url: 'https://play.google.com/store/apps/details?id=com.maplerides.passengerapp',
+                ),
+              ],
+            ))
       ],
     );
   }
