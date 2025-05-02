@@ -60,7 +60,7 @@ class DownloadBadge extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Download apps on',
+                    'Download the app on',
                     style:  TextStyle(
                       color: Colors.white,
                       fontSize: height * 0.2,
