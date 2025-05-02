@@ -22,10 +22,10 @@ class Container1 extends StatefulWidget {
 
 class _Container1State extends State<Container1> {
   final List<String> _backgroundImages = [
-    'assets/images/placeholderone.jpg',
-    'assets/images/placeholder1.jpg',
-    'assets/images/placeholder2.jpg',
-    'assets/images/placeholder3.jpg',
+    'assets/images/placeholderone.jpeg',
+    'assets/images/placeholder1.png',
+    'assets/images/placeholder2.png',
+    'assets/images/placeholder3.jpeg',
     'assets/images/placeholder4.jpg',
   ];
    bool loaded = false;
